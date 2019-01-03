@@ -40,7 +40,7 @@ class Triangle
       :equilateral
     elsif s1 != s2 && s2 != s3
       :scalene
-    else
+    elsif s1 == s2 || s2 == s3 || s1 == s3
       :isoceles
     end
   end # kind method
